@@ -1,0 +1,36 @@
+Dec 31, 2015 11:45:25 AM com.realtime.producer.KafkaProducer sendMessage
+INFO: Sending message to topic:: test1
+Key:: kuch khas nahi
+Value:: kuch khas nahi
+Dec 31, 2015 11:46:06 AM com.realtime.producer.KafkaProducer main
+FINE: Hello
+Dec 31, 2015 11:46:06 AM com.realtime.producer.KafkaProducer sendMessage
+INFO: Sending message to topic:: test1
+Key:: kuch khas nahi
+Value:: kuch khas nahi
+Dec 31, 2015 11:47:06 AM com.realtime.producer.KafkaProducer close
+INFO: Closing producer
+Dec 31, 2015 1:03:23 PM com.realtime.producer.KafkaProducer sendMessage
+INFO: Sending message to topic:: test1
+Key:: kuch khas nahi
+Value:: kuch khas nahi
+Dec 31, 2015 1:04:23 PM com.realtime.producer.KafkaProducer close
+INFO: Closing producer
+Dec 31, 2015 1:20:51 PM com.realtime.producer.KafkaProducer sendMessage
+INFO: Sending message to topic:: test1
+Key:: kuch khas nahi
+Value:: kuch khas nahi
+Dec 31, 2015 1:20:52 PM com.realtime.producer.KafkaProducer close
+INFO: Closing producer
+Dec 31, 2015 1:21:14 PM com.realtime.producer.KafkaProducer sendMessage
+INFO: Sending message to topic:: test
+Key:: kuch khas nahi
+Value:: kuch khas nahi
+Dec 31, 2015 1:21:14 PM com.realtime.producer.KafkaProducer close
+INFO: Closing producer
+Dec 31, 2015 2:05:49 PM com.realtime.producer.KafkaProducer sendMessage
+INFO: Sending message to topic:: test
+Key:: kuch khas nahi
+Value:: kuch khas nahi
+Dec 31, 2015 2:05:49 PM com.realtime.producer.KafkaProducer close
+INFO: Closing producer

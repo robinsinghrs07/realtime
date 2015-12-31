@@ -9,10 +9,12 @@ import java.util.logging.Logger;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 
+import com.realtime.common.LogGenerator;
+
 @SuppressWarnings({ "unchecked", "rawtypes" })
 public class KafkaProducer<K, V> {
 
-	public static final Logger LOG = Logger.getLogger("KafkaProducer"); 
+	public static final Logger LOG = LogGenerator.createLogs(KafkaProducer.class,"KafkaProducer",true); 
 
 	private final Producer producer;
 	private final String topic;
@@ -52,7 +54,7 @@ public class KafkaProducer<K, V> {
 	}
 
 	public void close() {
-		LOG.info("Closing produceer");
+		LOG.info("Closing producer");
 		if (producer != null) {
 			producer.close();
 		}
@@ -64,7 +66,7 @@ public class KafkaProducer<K, V> {
 		properties.put("bootstrap.servers", "localhost:9092");
 		properties.put("key.serializer","org.apache.kafka.common.serialization.StringSerializer");
 		properties.put("value.serializer","org.apache.kafka.common.serialization.StringSerializer");
-		KafkaProducer<String, String> genericKafkaProducer = new KafkaProducer(properties, "test1"); 
+		KafkaProducer<String, String> genericKafkaProducer = new KafkaProducer(properties, "test"); 
 		String msg = "kuch khas nahi";
 		Map<String, String> map = new HashMap<String, String>();
 		map.put(msg, msg);
